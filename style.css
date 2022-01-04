@@ -1,0 +1,37 @@
+@import "utilities.css";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary: #3dcfd3;
+  --dark: #161616;
+  --pure: #ffffff;
+  --ternary: #898989;
+  --light: #f2f2f2;
+}
+body {
+  font-family: "poppins", sans-serif;
+}
+
+.navbar {
+  padding: 1rem 3rem;
+  background: #161616;
+}
+.logo {
+  color: var(--pure);
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+}
+.navbar .nav-item a {
+  text-decoration: none;
+  color: var(--pure);
+  text-transform: uppercase;
+  margin: 0 1rem;
+  transition: all 0.5 ease;
+}
+.navbar .nav-item a:hover {
+  color: var(--primary);
+}
