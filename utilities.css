@@ -1,11 +1,17 @@
 .flex {
   display: flex;
 }
+.flex1 {
+  flex: 1;
+}
 .item-center {
   align-items: center;
 }
 .justify-between {
   justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
 }
 .btn {
   padding: 0.4rem 1.5rem;
@@ -14,15 +20,24 @@
   border: 2px solid transparent;
   outline: none;
   cursor: pointer;
+  border-radius: 5px;
+  text-transform: uppercase;
   transition: all 0.5s ease;
 }
 .btn-primary {
   background: var(--primary);
-  border-radius: 5px;
-  text-transform: uppercase;
 }
 .btn-primary:hover {
   background: transparent;
   border-color: var(--primary);
   color: var(--pure);
+}
+.btn-secondary {
+  background: transparent;
+  border-color: var(--primary);
+  color: var(--pure);
+}
+.btn-secondary:hover {
+  background: var(--primary);
+  color: var(--dark);
 }

@@ -10,6 +10,7 @@
   --pure: #ffffff;
   --ternary: #898989;
   --light: #f2f2f2;
+  --secondary: #070606;
 }
 body {
   font-family: "poppins", sans-serif;
@@ -34,4 +35,148 @@ body {
 }
 .navbar .nav-item a:hover {
   color: var(--primary);
+}
+
+/* home section start */
+.home-section {
+  background: var(--dark);
+  padding-bottom: 40px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 80%, 0 97%);
+}
+
+.home img {
+  width: 400px;
+}
+.home .home-text {
+  color: #f2f2f2;
+  padding: 3rem;
+}
+.home .home-text h4 {
+  font-size: 1.6rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+.home .home-text h1 {
+  font-size: 2rem;
+  font-weight: 100;
+  margin-bottom: 1rem;
+}
+.home .home-text p {
+  margin-bottom: 2rem;
+  padding-right: 5rem;
+  text-align: justify;
+}
+/* about section start */
+.about {
+  padding: 6rem 0;
+}
+.about .img-about img {
+  height: 350px;
+}
+.about-text {
+  padding-left: 30px;
+  margin-left: 5rem;
+}
+.about-text h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.about-text h3 {
+  text-align: center;
+  color: var(--primary);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.about-text p {
+  color: black;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+.social-links {
+  text-align: center;
+}
+.social-links a img {
+  width: 7%;
+  transition: all 0.4s ease;
+}
+.social-links a img:hover {
+  transform: scale(1.2);
+}
+/* service section start */
+.services {
+  background-color: var(--light);
+  padding: 0 6rem;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+}
+.section-heading {
+  color: var(--secondary);
+  text-align: center;
+  margin-bottom: 1rem;
+  line-height: 0.5rem;
+}
+.section-heading + p {
+  color: var(--ternary);
+  font-family: "lato", sans-serif;
+  text-align: center;
+  margin-bottom: 5rem;
+  margin-top: 0.3rem;
+}
+.services .container .card-wraper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 3.5rem;
+}
+.services .container .card-wraper .card {
+  background-color: var(--pure);
+  padding: 2.5rem 1rem;
+  position: relative;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px var(--ternary);
+  transition: all 0.4s ease;
+}
+.services .container .card-wraper .card i {
+  background: var(--primary);
+  font-size: 2rem;
+  padding: 1rem;
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.services .container .card-wraper .card h3 {
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+.services .container .card-wraper .card:hover {
+  background: var(--dark);
+}
+.services .container .card-wraper .card:hover h3,
+.services .container .card-wraper .card:hover p {
+  color: var(--pure);
+}
+
+/* freelancer section start */
+.frelancer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(image/camera.png);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 70%, 0 100%);
+  padding-bottom: 7rem;
+}
+.frelancer .container {
+  text-align: center;
+  padding: 3rem;
+  color: var(--pure);
+}
+.frelancer .container h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.frelancer .container p {
+  margin-bottom: 2rem;
+  font-family: "Lato", sans-serif;
 }
