@@ -16,6 +16,10 @@ body {
   font-family: "poppins", sans-serif;
 }
 
+.navbar {
+  padding: 1rem 3rem;
+  background: #161616;
+}
 .logo {
   color: var(--pure);
   font-size: 20px;
